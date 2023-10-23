@@ -1,0 +1,53 @@
+/*
+
+Typography is the way that text is 
+arranged and represented.
+
+*/
+/* we need to be carefull about the specificity of the tags as it might work */
+body {
+    padding: 10%;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* input,
+button {
+    font: inherit;
+} */
+
+p {
+    /*  text-decoration: line-through*/
+    /*   text-decoration: underline  */
+    /* text-transform: capitalize; */
+    /*caps the first letter each word, there is upercase lovercase */
+    text-align: justify;
+    /*This makes the right or lrft sodes of the paras algin*/
+    line-height: 1.5;
+    /*letter spacing  is also a property in css to provide space between letters eg= 1em*/
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+}
+
+/*a:visited  is a psudo class which represent the current state of the element because the state of the anchor element can change*/
+a:visited {
+    color: purple;
+}
+
+a:hover,
+a:focus {
+    /*this psudo class changes the color of the links when we hover over them */
+    color: dodgerblue;
+    background: black;
+}
+
+a:active {
+    /* shows which links are active */
+    color: red;
+}
+
+/* we need to be carefull about the specificity of the tags as it might work */

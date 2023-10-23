@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap");
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+ol {
+    list-style-type: upper-roman;
+    padding: 0;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: darkmagenta;
+    line-height: 1.5;
+}
+
+/* how to change specific list items color  given bellow , as you see we change colors in both ul and ol this can be avoided by specying ul or ol before li:nth-child()*/
+li:nth-child(2) {
+    /*  we can also pass odd or even in the "()"  */
+    color: red;
+}
+
+/* pseudo elements down below */
+ul li::marker {
+    /*this works only on markers(bullets)*/
+    color: #f00;
+    font-size: 1em;
+    content: "Only 5$>>";
+    /* you can put in svg and lot of othetr type of icons */
+}

@@ -1,0 +1,114 @@
+/*Note= if there is situation where the css to a pirticualar rule is not applying then you should inspect the page and see what is overwriting the rule*/
+/*!important overrides all the styling for eg= we use !important on 'p' tag then all the paras change the colour , '!important' is the nuclear solution when things get out of hand , it is not recomended to use */
+/*Css follows the the waterfall approach in a sense it reads from top to bottom but executes the bottom, now for eg we have an element selector and a specific selctor like a class, in these kind of cases no matter where we put the spicific selector or the element selector , css makes changes to to the specific selctor */
+/* "*" is the universal selctor which makes changes to the entier page*/
+/*the specificity sector choses the more specifc and it goes like this(1st=id 100points,2nd=.class(10 points each),3rd =  h or p tags(1 point each))the selector choses whichever has the highest points */
+/*In the color attribute we can add rgba(red, green, blue, alpha)where value of alpha=0to1*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} we get rid of all the extra padding and border space taking up the extra space*/
+/*rem= font size of root element, lh line height of the element, vw 1% of viewports width( can be used when we want our page to be devided ig , vh one percent of viewports height*/
+/*TYPOGRAPHY is a the way that text is arranged and presented*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*here the border box includes border as well as the padding , it does not include the margin whereas the content box takes up more space the the space assgined */
+}
+
+h1 {
+    font-size: 3rem;
+    color: #d1ce11;
+    background-color: #020205;
+}
+
+html {
+
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.batman0 {
+    font-family: fantasy;
+    line-height: 1.5;
+    border: dashed #D0D0C9;
+    font-size: 1.5rem;
+    margin: 1em;
+    padding: 1.5em 2em 2em 1.5em;
+    color: #012756;
+    background-color: #D0D0C9;
+    word-spacing: 0.2em;
+}
+
+.batman {
+    line-height: 1.5;
+    border: dashed #D0D0C9;
+    font-size: 1.5rem;
+    margin: 1em;
+    padding: 1.5em 2em 2em 1.5em;
+    color: #012756;
+    background-color: #D0D0C9;
+}
+
+.robin {
+    line-height: 1.5;
+    border: dashed #D0D0C9;
+    font-size: 1.5rem;
+    margin: 1em;
+    padding: 1.5em 2em 2em 1.5em;
+    color: #012756;
+    background-color: #D0D0C9;
+}
+
+body {
+    background: #012756;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*here in the above stylesheet, "(selector is p) p:{color: red}( "here{} is the Declaration","color is the property","red is the property value:)*/
+h2 {
+    border: 10px double #d1ce11;
+    font-size: 1.5rem;
+    margin: 1em;
+    padding: 1.5em 2em 2em 1.5em;
+    color: #d1ce11;
+    background-color: #020205;
+    outline: 5px solid black;
+}
+
+.robin {
+    color: #012756;
+    background-color: #D0D0C9;
+    font-size: 1.8rem;
+}
+
+.highlight {
+    background-color: #D0D0C9;
+}
+
+.highlight1 {
+    background-color: #D0D0C9;
+}
+
+.batman {
+    color: #012756;
+    ;
+    background: #D0D0C9;
+    font-size: 1.8rem;
+}
+
+.circle {
+    margin: 3rem auto;
+    background-color: rgb(3, 3, 3);
+    width: 125px;
+    height: 125px;
+    border: 5px #d1ce11;
+    border-radius: 75px;
+    outline: 5px double #d1ce11;
+}
+
+/*in the above stylesheet we use a class  to style  ".batman"*/
+/*id can also be used to style, we can use id only once in our CSS, it is not recomended to use id's, insted we should use classes*/
